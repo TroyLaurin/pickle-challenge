@@ -14,20 +14,20 @@ export const options = {
 		},
 		warmup: {
 			executor: 'shared-iterations',
-			vus: 25,
-			iterations: 50,
+			vus: 2,
+			iterations: 4,
 			startTime: '5s',
 			maxDuration: '10s',
 			exec: 'testRedis',
 		},
-		// timing: {
-		// 	executor: 'shared-iterations',
-		// 	vus: 2,
-		// 	iterations: 6,
-		// 	startTime: '15s',
-		// 	maxDuration: '10s',
-		// 	exec: 'testRedis',
-		// }
+		timing: {
+			executor: 'shared-iterations',
+			vus: 2,
+			iterations: 6,
+			startTime: '15s',
+			maxDuration: '10s',
+			exec: 'testRedis',
+		}
 	}
 };
 
